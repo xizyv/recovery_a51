@@ -15,6 +15,7 @@ DEVICE_PATH := device/samsung/a51
 
 # Architecture
 TARGET_ARCH := arm64
+TARGET_SUPPORTS_64_BIT_APPS := true
 TARGET_ARCH_VARIANT := armv8-a
 TARGET_CPU_ABI := arm64-v8a
 TARGET_CPU_ABI2 :=
