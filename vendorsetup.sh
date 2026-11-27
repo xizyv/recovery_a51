@@ -6,6 +6,9 @@
 FDEVICE="a51"
 
 export FOX_BUILD_DEVICE="${FOX_BUILD_DEVICE:-$FDEVICE}"
+set -x
+echo "=== A51 VENDORSETUP START ==="
+echo "FOX_BUILD_DEVICE=$FOX_BUILD_DEVICE"
 
 if [ "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
     export ALLOW_MISSING_DEPENDENCIES=true
@@ -68,3 +71,5 @@ if [ "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 else
     echo "Skipping a51 build variables: FOX_BUILD_DEVICE=$FOX_BUILD_DEVICE"
 fi
+
+echo "=== A51 VENDORSETUP END ==="
